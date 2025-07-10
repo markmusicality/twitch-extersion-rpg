@@ -1,0 +1,24 @@
+{
+  "name": "twitch-extension-rpg",
+  "version": "1.0.0",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/markmusicality/twitch-extersion-rpg.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/markmusicality/twitch-extersion-rpg/issues"
+  },
+  "homepage": "https://github.com/markmusicality/twitch-extersion-rpg#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
