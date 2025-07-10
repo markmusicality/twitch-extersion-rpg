@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>RPG Character Builder</title>
+  <style>
+    body { font-family: sans-serif; background: #1e1e1e; color: white; padding: 20px; }
+    select, button { margin-top: 10px; font-size: 1rem; }
+    .hidden { display: none; }
+  </style>
+  <script src="https://extension-files.twitch.tv/helper/v1/twitch-ext.min.js"></script>
+</head>
+<body>
+  <h2>Build Your Hero</h2>
+  <div id="builder">
+    <label>Class:
+      <select id="class">
+        <option value="warrior">Warrior</option>
+        <option value="mage">Mage</option>
+        <option value="rogue">Rogue</option>
+      </select>
+    </label><br>
+    <label>Race:
+      <select id="race">
+        <option value="human">Human</option>
+        <option value="elf">Elf</option>
+        <option value="orc">Orc</option>
+      </select>
+    </label><br>
+    <label>Weapon:
+      <select id="weapon">
+        <option value="sword">Sword</option>
+        <option value="staff">Staff</option>
+        <option value="dagger">Dagger</option>
+      </select>
+    </label><br>
+    <button onclick="createCharacter()">Create Character</button>
+  </div>
+
+  <div id="actions" class="hidden">
+    <h3>Welcome, hero!</h3>
+    <button onclick="raid()">Raid Dungeon</button>
+    <button onclick="duel()">Duel Random</button>
+    <pre id="results"></pre>
+  </div>
+
+  <script src="overlay.js"></script>
+</body>
+</html>

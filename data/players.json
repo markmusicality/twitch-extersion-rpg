@@ -1,0 +1,14 @@
+{
+  "demo_user_123": {
+    "class": "warrior",
+    "race": "human",
+    "weapon": "sword",
+    "level": 2,
+    "xp": 18,
+    "gold": 25,
+    "wins": 1,
+    "losses": 0,
+    "dungeonLevel": 3,
+    "inventory": ["iron shield", "healing potion"]
+  }
+}
