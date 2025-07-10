@@ -12,7 +12,7 @@ function createCharacter() {
   const race = document.getElementById('race').value;
   const weapon = document.getElementById('weapon').value;
 
-  fetch('http://localhost:8080/character', {
+  fetch('https://twitch-rpg-backend.onrender.com/character', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ userId, class: charClass, race, weapon })
@@ -27,7 +27,7 @@ function createCharacter() {
 }
 
 function raid() {
-  fetch('http://localhost:8080/raid', {
+  fetch('https://twitch-rpg-backend.onrender.com/raid', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ userId })
@@ -43,7 +43,7 @@ function duel() {
   // Use demo opponent for now
   const opponentId = 'demo_user_123';
 
-  fetch('http://localhost:8080/duel', {
+  fetch('https://twitch-rpg-backend.onrender.com/duel', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ userId, opponentId })
